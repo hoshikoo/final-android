@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+import java.util.ArrayList;
+
 import nyc.c4q.android.model.Email;
 import nyc.c4q.android.rest.EmailService;
 
@@ -45,10 +48,12 @@ public class EmailListFragment extends Fragment {
     View view = null;
 
     // TODO - get emails from service and set up list adapter
+    ArrayList<Email>emails = new ArrayList<>();
+    emails = 
 
     // TODO - Bind adapter to ListView
-
-    // TODO - when an email is clicked, notify the host activity via onEmailSelected...
+    emailAdapter = new EmailAdapter(getActivity(), emails;
+     // TODO - when an email is clicked, notify the host activity via onEmailSelected...
 
     return view;
   }
